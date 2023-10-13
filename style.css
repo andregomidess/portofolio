@@ -318,3 +318,32 @@ figure img{
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.projects-box{
+    flex: 1 1 20rem;
+    display: flex;
+    gap: 5rem;
+    /* flex-wrap: wrap; */
+}
+
+.projects-box .projects-content{
+    border: .2rem solid var(--main-color);
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-box .projects-content .content{
+    text-align: center;
+}
