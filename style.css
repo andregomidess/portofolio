@@ -338,7 +338,6 @@ figure img{
 .projects-box .projects-content{
     border: .2rem solid var(--main-color);
     border-radius: .5rem;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
