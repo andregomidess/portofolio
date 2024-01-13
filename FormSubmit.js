@@ -1,6 +1,9 @@
 class FormSubmit{
     constructor(settings){
-        this.settings = settings;
+        this.settings = {
+            success: "<h1 class='success'>Mensagem enviada!</h1>",
+            error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+        };
         this.form = document.querySelector(settings.form);
         this.formButton = document.querySelector(settings.button);
         if(this.form){
@@ -28,7 +31,7 @@ class FormSubmit{
     }
 
     onSubmission(e){
-        e.prevenDefault();
+        e.preventDefault();
         e.target.disabled = true;
         e.target.innerText = "Enviando...";
     }
@@ -37,7 +40,7 @@ class FormSubmit{
        try{
         this.onSubmission(event)
         await fetch(this.url, {
-            method: 'POST',
+            method: "POST",
             headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
