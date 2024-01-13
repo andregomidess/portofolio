@@ -404,6 +404,31 @@ figure img{
 
 } */
 
+.projects-content .content .repo-btn{
+   display: flex;
+   width: 50%;
+   align-items: center;
+   font-size: 1rem;
+   margin-top: 1rem;
+   cursor: pointer;
+   transition: .5s ease-in;
+   color: var(--text-color);
+}
+
+.projects-content .content .repo-btn:hover{
+    color: var(--main-color);
+}
+
+.projects-content .content .repo-btn i{
+    font-size: 3rem;
+}
+
+.projects-content .content .repo-btn span{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    font-weight: bold;
+}
+
 .projects-content .content .techs p{
     padding: .8rem 0;
     font-weight: 700;
@@ -413,6 +438,11 @@ figure img{
 .projects-content .content .techs i{
     font-size: 3rem;
     color: var(--main-color);
+}
+.projects-content .content .techs img{
+    margin-right: .7rem;
+    width: 23px;
+    height: 23px;
 }
 
 .skills{
